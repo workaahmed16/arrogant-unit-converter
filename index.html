@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+
+    <script src="main.js"></script>
+        <meta charset="UTF-8">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <h1>Arrogant Unit Converter 1.0</h1>
+    <br>
+    <p>Can you believe it?! You are using the best unit converter in the world. Whoever thought a chump like you had a chance with me.
+    This unit converter was handcrafted by handcrafted hands from the hilltops of some valley you never heard of. 110% Natural. You better use
+    this unit converter while it still exists. It appears on the internet every one thousand years. </p>
+    <hr>
+    <label>BTCUSD</label><input type = "radio" name = "measurement" id = "btcusdRadio" onclick ="changeDropDown(this.id)"><br>
+    <label>Weight</label><input type = "radio" name = "measurement" id = "weightRadio" onclick="changeDropDown(this.id)"><br>
+    <label>Temperature</label><input type = "radio" name = "measurement" id = "tempRadio" onclick ="changeDropDown(this.id)"><br>
+    <br>
+
+        <input type = "number" id = "textbox1" placeholder = "input here: ex: 0" required = "required" onkeyup="convert(document.getElementById('dropdown').value, document.getElementById('dropdown2').value)">
+        <select id = "dropdown"></select>
+
+        <input type = "button" id = "switchButton" value = "Switch" onclick = "swap()">
+
+        <input type="number" id="textbox2" readonly="readonly" placeholder="Result appears here">
+        <select id="dropdown2" onchange="convert(document.getElementById('dropdown').value, document.getElementById('dropdown2').value)"></select>
+
+
+</body>
+</html>
